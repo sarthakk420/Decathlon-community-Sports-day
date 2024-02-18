@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Decathlon Community Sports Day</title>
+
+  <!--CONNECTING TO CSS STYLING -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+  <!--LINK TO DECATHLON TAB LOGO -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/larger_tab_logo.png') }}">
+</head>
+<body>
+
+  <!--HEADER SECTION STARTS -->
+<header>
+    <img class="logo" src="{{ url_for('static', filename='images/larger_decathlon_logo.png') }}" alt="Decathlon Logo">
+    <h1>Decathlon Community Sports Day</h1>
+    <p>Join us for a day of sports and fun!</p>
+  </header>
+   <!--HEADER SECTION ENDS -->
+
+ <!--NAVIGATION SECTION STARTS -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+<!--NAVIGATION SECTION STARTS -->
+
+<!--SECTIONS START -->
+  <section id="about">  <!--CONTENT ABOUT DECATHLON COMMUNITY SPORTS DAY -->
+    <h2>About Decathlon Community Sports Day</h2>
+    <p>Decathlon Community Sports Day is an annual event where sports enthusiasts of all ages and skill levels come together to celebrate the joy of sports. This event is organized by Decathlon, the world's largest sports retailer, to promote an active and healthy lifestyle in the community.</p>
+    <p>During the event, participants can engage in various sports activities, including football, basketball, badminton, and more. There will be friendly matches, skill challenges, and fun games for everyone to enjoy. Whether you're a seasoned athlete or a beginner, there's something for everyone!</p>
+  </section>
+
+  <section id="events">   <!--CONTENT ABOUT VARIOUS EVENTS -->
+    <h2>Events</h2>
+    <p>Decathlon Community Sports Day offers a wide range of sports events and activities according to different interests. Some of the featured events include:</p>
+    <ul>
+      <li>Football Tournament</li>
+      <li>Basketball Slam Dunk Contest</li>
+      <li>Badminton Doubles Championship</li>
+      <li>Running Races (5K and 10K)</li>
+      <li>Cycling Fun Ride</li>
+      <li>Tug of War</li>
+    </ul>
+    <p>These are just a few examples, and there are many more exciting activities planned for the day. So, gather your friends and family, and come join us for a day full of sportsmanship!</p>
+  </section>
+
+  <section id="register">   <!--CONTENT ABOUT FORM AND DETAILS -->
+    <h2>Register for the Event</h2>
+    <p>To participate in the Decathlon Community Sports Day, please fill out the registration form below. Don't miss this opportunity to be a part of this thrilling sports event!</p>
+    <form id="registration-form" method="POST" action="/register">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <section id="contact">   <!--CONTENT ABOUT CONTACT IMFORMATION -->
+    <h2>Contact Details</h2>
+    <p>If you have any questions or need further information about the event, feel free to contact us:</p>
+    <ul>
+      <li>Email: info@decathlonsportsday.com</li>
+      <li>Phone: +91 9999999999</li>
+      <li>Address: Ajmer road, Jaipur, India</li>
+    </ul>
+    <p>We are here to assist you and make your Decathlon Community Sports Day experience unforgettable!</p>
+  </section>
+  <!--SECTIONS ENDS -->
+
+  <!--FOOTER STARTS -->
+  <footer>
+    &copy; 2023 Decathlon Community Sports Day. All rights reserved.
+  </footer>
+<!--FOOTER ENDS -->
+
+<!--CONNECTING TO JAVASCRIPT FILE -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  
+</body>
+</html>
