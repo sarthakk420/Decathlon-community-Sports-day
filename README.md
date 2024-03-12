@@ -1,15 +1,18 @@
-Our project consists of a single webpage that provides information about Decathlon Community Sports Day events, facilitates easy registration for events, encourages communication, and ensures a dynamic and responsive user experience. The combination of frontend technologies, backend processing with Flask, and database management with SQLite creates a robust and user-friendly platform.​
+Decathlon Community Sports Day Registration Platform
 
-TECHNOLOGIES USED​: 
+This project is a single-page web application designed to streamline registration for Decathlon Community Sports Day events. It offers a dynamic user experience, facilitating easy event registration and encouraging communication among participants.
 
-HTML = Structuring the webpage with elements like header, navigation and footer.​
+Features:
 
-CSS = Enhances visual appeal, styling key section such as header and navigation.​
+Simple and intuitive user interface for event registration.
+Real-time data updates and form validation using JavaScript.
+Robust backend processing with Flask, managing server-side logic and handling form submissions.
+Efficient database management using SQLite to store and retrieve user registration data.
 
-JAVASCRIPT = Adds interactivity with features like form validation and real-time data updates.​
+Technologies Used:
 
-PYTHON WITH FLASK = Manages server-side logic, handling form submissions and connecting frontend to backend.​
-
-SQL LITE = Efficiently stores and retrieves user registration data, serving as the project's database.​
-
-​
+HTML for structuring the webpage.
+CSS for enhancing visual appeal and styling key sections.
+JavaScript for adding interactivity and dynamic features.
+Python with Flask for server-side processing.
+SQLite for database management.
